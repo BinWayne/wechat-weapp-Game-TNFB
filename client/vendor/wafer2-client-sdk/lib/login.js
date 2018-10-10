@@ -116,6 +116,12 @@ var login = function login(options) {
         var iv = wxLoginResult.iv;
         var header = {};
 
+        console.log(
+          'line 120'+
+          'code ->'+code+
+          ' | encryptedData->' + encryptedData+
+          ' | iv->' + iv
+        )
         header[constants.WX_HEADER_CODE] = code;
         header[constants.WX_HEADER_ENCRYPTED_DATA] = encryptedData;
         header[constants.WX_HEADER_IV] = iv;
