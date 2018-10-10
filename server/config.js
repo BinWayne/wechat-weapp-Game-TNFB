@@ -5,9 +5,9 @@ const CONF = {
   port: '5757',
   rootPathname: '',
   // 微信小程序 App ID
-  appId: '填写您申请的appId',
+  appId: 'wx688f5c22f3c71537',
   // 微信小程序 App Secret
-  appSecret: '填写您的小程序密码',
+  appSecret: 'a84974704a740bc891d9d702b2909b6b',
   // 是否使用腾讯云代理登录小程序
   useQcloudLogin: true,
   /**

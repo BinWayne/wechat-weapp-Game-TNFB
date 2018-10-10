@@ -1,8 +1,8 @@
 {
-	"client": "./client",
-	"svr": "./server",
-	"miniprogramRoot": "./client",
-	"qcloudRoot": "./server",
+	"client": "client/",
+	"svr": "server/",
+	"miniprogramRoot": "client/",
+	"qcloudRoot": "server/",
 	"setting": {
 		"urlCheck": true,
 		"es6": true,
@@ -10,8 +10,8 @@
 		"minified": true,
 		"newFeature": true
 	},
-	"appid": "wx472e8ad45bbfcb79",
-	"projectname": "GITHUB",
+	"appid": "wx688f5c22f3c71537",
+	"projectname": "%E5%A4%B4%E8%84%91%E9%A3%8E%E6%9A%B4",
 	"libVersion": "1.4.4",
 	"condition": {
 		"search": {
