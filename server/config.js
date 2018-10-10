@@ -20,7 +20,7 @@ const CONF = {
     port: 3306,
     user: 'root',
     db: 'cAuth',
-    pass: '初始密码为您的appId',
+    pass: '123456',
     char: 'utf8mb4'
   },
   cos: {

@@ -3,9 +3,9 @@
  */
 
 // 此处主机域名修改成腾讯云解决方案分配的域名
-var host = '填写您的开发环境域名'  //开发环境
+var host = 'https://d3171597.ngrok.io'  //开发环境
 
-var appId ='填写您申请的appId'
+var appId ='wx688f5c22f3c71537'
 
 var config = {
 

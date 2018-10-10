@@ -7,7 +7,9 @@
     </view>
     <image src='../../imgs/entry_qr.svg' class='qr' bindtap='get_qr_address'></image> <!--注意不要跳转到web_view-->
   </view>
-
+<view>
+<button open-type="getUserInfo">用户授权信息</button>
+</view>
   <view class='choose' bindtap='gotoFighting'>
     <image src='../../imgs/entry_fighting.jpg'></image>
     <view>排位赛</view>
