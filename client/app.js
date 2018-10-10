@@ -34,6 +34,7 @@ App({
         }
       },
       fail(error) {
+        console.log('37-> fail')
         util.showModel('登录失败', error);
       }
     });

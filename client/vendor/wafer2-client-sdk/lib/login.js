@@ -128,7 +128,8 @@ var login = function login(options) {
             data: options.data,
             success: function (result) {
                 var data = result.data;
-
+                console.log('131-> success')
+              console.log('132-> success-> code->' + data.code);
                 // 成功地响应会话信息
                 if (data && data.code === 0 && data.data.skey) {
                     var res = data.data
@@ -137,6 +138,7 @@ var login = function login(options) {
                         wx.setStorageSync('user_info_'+ constants.WX_SESSION_MAGIC_ID, res.userinfo);//jacksplwxy:将用户信息存储起来
                         options.success(userInfo);
                     } else {
+                      
                         var errorMessage = '登录失败(' + data.error + ')：' + (data.message || '未知错误');
                         var noSessionError = new LoginError(constants.ERR_LOGIN_SESSION_NOT_RECEIVED, errorMessage);
                         options.fail(noSessionError);
@@ -144,6 +146,7 @@ var login = function login(options) {
 
                 // 没有正确响应会话信息
                 } else {
+                  console.log('148 no session error')
                     var noSessionError = new LoginError(constants.ERR_LOGIN_SESSION_NOT_RECEIVED, JSON.stringify(data));
                     options.fail(noSessionError);
                 }
@@ -153,6 +156,7 @@ var login = function login(options) {
             fail: function (loginResponseError) {
                 var error = new LoginError(constants.ERR_LOGIN_FAILED, '登录失败，可能是网络错误或者服务器发生异常');
                 options.fail(error);
+                console.log('login.js-> 156 error')
             },
         });
     });
